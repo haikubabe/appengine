@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Hidden HTML</title>
+	<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<br><br>
+<input type="hidden" name="food" value="%s">
+</body>
+</html>

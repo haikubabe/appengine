@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Food Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<form>
+			<h1 style="font-weight: bold ; font-size: 25px ; color: blue ; padding-left: 7px">Add a Food!!!</h1>
+			<input type="text" name="name">
+			<button>Add</button>
+
+			{% if n==1 %}
+				n equals 1
+			{% else %}
+				n doesn't equals 1
+			{% end if %}
+
+		</form>
+	</body>
+</html>

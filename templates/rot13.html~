@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ROT13 Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<style type="text/css">
+
+			body {
+				padding-left: 10px;
+				width: 800px;
+				padding-top: 20px;
+			}
+
+			.container h1 {
+				color: green;
+			}
+
+			textarea {
+				height: 100px;
+				width: 400px;
+			}
+
+		</style>
+	</head>
+
+
+	<body>
+
+		<form method="post">
+
+		    <div class="container">			
+			<label>
+				<h1>Enter some text to ROT13!!!!</h1>
+			</label>
+
+			<div>			
+				<textarea name="text">{{text}}</textarea>
+			</div>
+
+			<button>Submit</button>
+
+		    </div>
+
+		</form>
+	</body>
+</html>
