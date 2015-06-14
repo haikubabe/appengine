@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Blog Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+
+			body {
+				font-family: sans-serif;
+				width: 800px;
+				margin: 0 auto;
+				padding: 10px;
+			}
+			
+			hr {
+				border-style: solid;
+				border-width: 2px;
+			}
+
+			.blog + .blog {
+				margin-top: 20px;
+			}
+
+			.blog-content {
+				padding-top: 10px;
+			}
+				
+		</style>
+			
+	</head>
+
+	<body>
+		<div style="text-align: center"><h1>My Blog</h1></div>
+		<br><br>
+
+		{% for blog in blogs %}
+			<div class="blog">
+				<div class="blog-subject"><h2>{{blog.subject}}</h2></div>
+				<hr>
+				<div class="blog-content">{{blog.content | safe}}</div>
+			</div>
+			<br><br><br>
+		{% endfor %}
+	</body>
+</html>

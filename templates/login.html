@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Login Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<style type="text/css">
+			
+			body {
+				width: 800px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 40px;
+				margin-top: 50px;
+			}
+			
+			h1 {
+				color:green;
+	
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<h1>User Account</h1>
+		<form method="post">
+		    <div class="container">
+			<div class="username">
+				<label>
+					Enter your username
+				</label>
+				<input type="text" name="username" value="{{username}}">
+			</div>
+			<br>
+			<div class="password">
+				<label>
+					Enter your password
+				</label>
+				<input type="password" name="password" value="">
+			</div>
+
+			<br>
+			<div style="color:red ; font-weight: bold">{{error}}</div>
+			<br>
+			<button>submit</button>
+		    </div>
+		</form>
+	</body>
