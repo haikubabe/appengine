@@ -4,6 +4,7 @@
 	<head>
 		<title>Blog Page</title>
 		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
 		<style type="text/css">
 
 			body {
@@ -28,6 +29,8 @@
 				
 		</style>
 			
+=======
+>>>>>>> 483356a406a675b89c38c0764d5720ade15b724a
 	</head>
 
 	<body>
@@ -36,11 +39,17 @@
 
 		{% for blog in blogs %}
 			<div class="blog">
+<<<<<<< HEAD
 				<div class="blog-subject"><h2>{{blog.subject}}</h2></div>
 				<hr>
 				<div class="blog-content">{{blog.content | safe}}</div>
 			</div>
-			<br><br>
+			<br><br><br>
+=======
+				<div class="blog-subject">{{blog.subject}}</div>
+				<div class="blog-content">{{blog.content | safe}}</div>
+			</div>
+>>>>>>> 483356a406a675b89c38c0764d5720ade15b724a
 		{% endfor %}
 	</body>
 </html>
