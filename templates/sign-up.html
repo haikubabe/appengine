@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SignUp Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<style type="text/css">
+			
+			body {
+				width: 800px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+			}
+			
+			h1 {
+				color:blue;
+	
+			}
+
+				
+		</style>
+	</head>
+
+	<body>
+		<h1>SignUp Form</h1>
+		
+		<form method="post">
+			<div class="container">
+			    <div class="username">
+				<label>
+					Enter username
+				</label>
+				<input type="text" name="username" value="{{username}}">
+				<em style="color:red">{{error_username}}</em>
+				<div style="color:red">{{have_error}}</div>
+			    </div>
+			
+			    <br>
+
+			    <div class="password">
+				<label>
+					Enter password
+				</label>
+				<input type="password" name="password" value="">
+				<em style="color:red">{{error_password}}</em>
+			    </div>
+	
+			    <br>
+
+			    <div class="verify">
+				<label>
+					Enter password again
+				</label>
+				<input type="password" name="verify" value="">
+				<em style="color:red">{{error_verify}}</em>
+			    </div>
+
+			    <br>
+
+			    <div class="email">
+				<label>
+					Enter email-address
+				</label>
+				<input type="text" name="email" value="{{email}}">
+				<em style="color:red">{{error_email}}</em>
+			    </div>
+
+				<br><br>
+
+				<button>Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
+
+

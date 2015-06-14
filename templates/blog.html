@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Blog Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div style="text-align: center"><h1>My Blog</h1></div>
+		<br><br>
+
+		{% for blog in blogs %}
+			<div class="blog">
+				<div class="blog-subject">{{blog.subject}}</div>
+				<div class="blog-content">{{blog.content | safe}}</div>
+			</div>
+		{% endfor %}
+	</body>
+</html>

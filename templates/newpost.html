@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>NewPost Page</title>
+		<link href="/home/sreemoyee/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				width: 800px;
+				margin: 0 auto;
+				padding: 10px;
+				
+			}
+
+			.error {
+				color: red;
+				font-style: italic;
+			}
+
+
+			.blog-subject {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+
+			input[type=text] {
+				width: 400px;
+				font-size: 20px;
+				padding: 2px;
+			}
+
+			.blog-content {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+
+			textarea {
+				width: 400px;
+				height: 200px;
+				font-size: 17px;
+				padding: 2px;
+			}
+
+			button {
+				font-size: 24px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div style="text-align: center"><h1>My Blog</h1></div>
+		<br><br>
+		<h2>New Post</h2>
+		
+		<form method="post">
+			<div class="blog">
+				<div class="blog-subject">
+					<label>
+						<div style="font-weight: bold">Subject<div>
+					</label>	
+					<input type="text" name="subject" value="{{subject}}">
+					<em style="color:red">{{subject_error}}</em>	
+				</div>
+				<div class="blog-content">
+					<label>
+						<div style="font-weight: bold">Content</div>
+						
+					</label>
+					<textarea name="content">{{content}}</textarea>
+					<em style="color:red">{{content_error}}</em>
+					
+				</div>
+
+				<br>
+				<div class="error">{{error}}</div> 
+				<br>
+				<button>submit</button>
+			</div>
+		</form>
+	</body>
+</html>
+
